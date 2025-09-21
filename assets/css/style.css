@@ -1,0 +1,39 @@
+/* Comentário em CSS */
+.nav-ul-links{
+    list-style: none;
+    margin:0;
+    padding:0;
+    /* faz com que o elemento englobe os elementos flutuantes dentro dele overflow:hidden */
+    overflow: hidden;
+    background-color: #333333;
+}
+
+.links-nav{
+    /*coloca os itens na horizontal = float:left*/
+    float: left;
+
+}
+
+.nav-ul-links .links-nav a{
+    /* faz com que o link ocupe (crie) toda a área do elemento pai -  */
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    /* remove o sublinhado dos links - text-decoration: none; */
+    text-decoration: none;
+
+
+}
+
+.nav-ul-links .links-nav a:hover{
+    background-color: #111111;
+}
+
+.logo{
+    text-align: center;
+}
+
+.logo-img{
+    border-radius: 20px;
+}
