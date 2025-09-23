@@ -10,7 +10,57 @@
     <h1>CSS</h1>
 
     <h2>Conceito Básico</h2>
-    <p>CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para descrever a apresentação de documentos HTML. Com o CSS, é possível controlar a aparência de elementos em uma página web, como cores, fontes, espaçamentos e layout.</p>
+    <p>CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para descrever a apresentação de documentos HTML. 
+        Com o CSS, é possível controlar a aparência de elementos em uma página web, como cores, fontes, espaçamentos e layout.</p>
+
+    <h2>O CSS pode ser aplicado de três maneiras:</h2>
+    <ul>
+        <li><strong>Inline: (embutido)</strong> Estilos são aplicados diretamente no elemento HTML usando o atributo "style".</li>
+        <p>Exemplo: <code>&lt;h1 style="color: blue;"&gt;Título&lt;/h1&gt;</code></p>
+        <li><strong>Internal:</strong> Estilos são definidos na seção de cabeçalho de um documento HTML usando uma tag &lt;style&gt; no cabeçalho do documento HTML.</li>
+        <p>Exemplo:</p>
+        <pre>
+            &lt;style&gt;
+                h1 {
+                    color: blue;
+                }
+            &lt;/style&gt;
+        </pre>
+        <li><strong>External:</strong> Estilos são definidos em um arquivo CSS separado e vinculados ao documento HTML, usando a tag &lt;link&gt;.</li>
+        <p>Exemplo: <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code></p>
+    </ul>
+
+    <h2>Seletores de CSS</h2>
+    <p>Seletores são usados para "selecionar" os elementos HTML que você deseja estilizar. Alguns seletores comuns incluem:</p>
+    <p>Podemos dividir os seletores CSS em quatro categorias:</p>
+    <ul>
+        <li><strong>Seletores Simples:</strong> Selecionam elementos HTML diretamente pelo nome da tag, classe ou ID.</li>
+        <p>Exemplos:</p>
+        <ul>
+            <li>Tag: <code>h1 { color: blue; }</code></li>
+            <li>Classe: <code>.minha-classe { font-size: 16px; }</code></li>
+            <li>ID: <code>#meu-id { margin: 10px; }</code></li>
+        </ul>
+        <li><strong>Seletores Combinadores:</strong> Selecionam elementos com base em sua relação com outros elementos.</li>
+        <p>Exemplos:</p>
+        <ul>
+            <li>Descendente: <code>div p { color: red; }</code> (seleciona todos os &lt;p&gt; dentro de &lt;div&gt;)</li>
+            <li>Filho: <code>ul > li { list-style-type: none; }</code> (seleciona &lt;li&gt; que são filhos diretos de &lt;ul&gt;)</li>
+            <li>Irmão adjacente: <code>h1 + p { margin-top: 0; }</code> (seleciona o &lt;p&gt; imediatamente após um &lt;h1&gt;)</li>
+            <li>Irmão geral: <code>h1 ~ p { color: green; }</code> (seleciona todos os &lt;p&gt; que são irmãos de um &lt;h1&gt;)</li>
+        </ul>
+        <li><strong>Seletores Atributo:</strong> Selecionam elementos com base em atributos específicos.</li>
+        <p>Exemplos:</p>
+        <ul>
+            <li><code>a[href] { text-decoration: none; }</code> (seleciona todos os links com atributo href)</li>
+            <li><code>input[type="text"] { border: 1px solid #ccc; }</code> (seleciona campos de texto)</li>
+        </ul>
+        <li><strong>Seletores Pseudo-classes:</strong> Selecionam elementos em um estado específico.</li>
+        <p>Exemplos:</p>
+        <ul>
+            <li><code>a:hover { color: orange; }</code> (seleciona links quando o mouse está sobre eles)</li>
+            <li><code>input:focus { border-color: blue; }</code> (seleciona campos de entrada quando estão focados)</li>
+    </ul>
 
 </body>
 </html>
