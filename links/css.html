@@ -62,5 +62,54 @@
             <li><code>input:focus { border-color: blue; }</code> (seleciona campos de entrada quando estão focados)</li>
     </ul>
 
+    <h2>Comentários em CSS</h2>
+    <p>Comentários em CSS são usados para explicar o código e são ignorados pelo navegador. Eles podem ser úteis para documentar estilos ou para desativar temporariamente partes do código.</p>
+    <p>Os comentários em CSS são escritos entre <code>/*</code> e <code>*/</code>.</p>
+    <pre>
+        /* Este é um comentário em CSS */
+        h1 {
+            color: blue; /* Este comentário está dentro de uma regra CSS */
+        }
+    </pre>
+
+    <h2>Cores CSS</h2>
+    <p>O CSS suporta várias maneiras de definir cores, incluindo nomes de cores, valores hexadecimais, RGB, RGBA, HSL e HSLA.</p>
+    <ul>
+        <li><strong>Nomes de Cores:</strong> Exemplos incluem "red", "blue", "green", etc.</li>
+        <li><strong>Valores Hexadecimais:</strong> Exemplo: <code>#FF0000</code> (vermelho)</li>
+        <li><strong>RGB:</strong> Exemplo: <code>rgb(255, 0, 0)</code> (vermelho)</li>
+        <p>Os valores RGB são compostos por três componentes: vermelho, verde e azul e vão do intervalo de 0 a 255.</p>
+        <li><strong>RGBA:</strong> Exemplo: <code>rgba(255, 87, 51, 0.5)</code> (o último valor é a opacidade)</li>
+        <li><strong>HSL:</strong> (matiz, saturação, luminosidade) Exemplo: <code>hsl(0, 100%, 50%)</code> (vermelho)</li>
+        <p>matiz é a cor percebida: (0 a 360), saturação (porcentagem) é a intensidade (porcentagem) da cor e luminosidade é o brilho da cor.</p>
+        <li><strong>HSLA:</strong> Exemplo: <code>hsla(14, 100%, 60%, 0.5)</code></li>
+
+
+<h2>Fundos CSS</h2>
+    <p>O CSS permite definir fundos para elementos HTML usando a propriedade <code>background</code>. Você pode definir cores de fundo, imagens de fundo e gradientes, entre outros estilos relacionados ao fundo.</p>
+    <ul>
+        <li><strong>Cor de Fundo:</strong> Use a propriedade <code>background-color</code> para definir uma cor de fundo.<br> Pode se usar: nomes de cores, valores hexadecimais, RGB, RGBA, HSL e HSLA.</li>
+        <p>Exemplo: <code>body { background-color: lightblue; }</code></p>
+        <li><strong>Imagem de Fundo:</strong> Use a propriedade <code>background-image</code> para definir uma imagem como fundo.</li>
+        <p>Exemplo: <code>div { background-image: url('imagem.jpg'); }</code></p>
+        <li><strong>Outras Propriedades de Fundo:</strong></li>
+        <ul>
+            <li><code>background-repeat:</code> Controla se a imagem de fundo se repete (valores: repeat(padrão), no-repeat, repeat-x, repeat-y).</li>
+            <p>Exemplo: <code>div { background-image: url('imagem.jpg'); background-repeat: no-repeat; }</code></p>
+            <li><code>background-size:</code> Define o tamanho da imagem de fundo (valores: auto, cover, contain, ou dimensões específicas).</li>
+            <p>Exemplo: <code>div { background-image: url('imagem.jpg'); background-size: cover; }</code></p>
+            <li><code>background-position:</code> Define a posição inicial da imagem de fundo (valores: top, bottom, left, right, center ou coordenadas específicas).</li>
+            <p>Exemplo: <code>div { background-image: url('imagem.jpg'); background-position: center; }</code></p>
+            <li><code>background-attachment:</code> Controla se a imagem de fundo rola com o conteúdo ou fica fixa (valores: scroll, fixed).</li>
+            <p>Exemplo: <code>div { background-image: url('imagem.jpg'); background-attachment: fixed; }</code></p>
+            <li><code>background-clip:</code> Controla como o fundo é recortado (valores: border-box(padrão), padding-box, content-box).</li>
+            <p>Exemplo: <code>div { background-image: url('imagem.jpg'); background-clip: border-box; }</code></p>
+        </ul>
+
+        <li>Propriedade abreviada: <code>background.</code></li>
+        <p>Ordem dos valores: <code>background-color</code> | <code>background-image</code> | <code>background-repeat</code> | <code>background-position</code> | <code>background-size</code></p>
+        <p>Exemplo: <code>div { background: lightblue url('imagem.jpg') no-repeat center/cover fixed; }</code></p>
+    </ul>
+
 </body>
 </html>
