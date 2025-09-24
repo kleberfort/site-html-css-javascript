@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <link rel="stylesheet" href="../assets/css/css-style.css">
 </head>
 <body>
+    <main>
 
     <h1>CSS</h1>
 
@@ -110,6 +113,43 @@
         <p>Ordem dos valores: <code>background-color</code> | <code>background-image</code> | <code>background-repeat</code> | <code>background-position</code> | <code>background-size</code></p>
         <p>Exemplo: <code>div { background: lightblue url('imagem.jpg') no-repeat center/cover fixed; }</code></p>
     </ul>
+
+<h2>Propriedade de Borda CSS</h2>
+<p>A propriedade de borda no CSS é usada para definir a aparência das bordas de um elemento. Você pode controlar a largura, estilo e cor da borda.</p>
+<ul></ul>
+    <li><code>border-width:</code> Define a largura da borda (valores: pixels, em, rem, etc.) ou usando valores predefinidos: thin, medium, thick.</li>
+    <p>A propriedade pode ter de um a quatro valores, permitindo definir bordas diferentes para cada lado. (superior, direita, inferior, esquerda).</p>
+    <p>Exemplo: <code>div { border-width: 2px; }</code></p>
+    <li><code>border-style:</code> Define o estilo da borda (valores: solid, dashed, dotted, etc.).</li>
+    <p>A propriedade border é uma propriedade abreviada que pode incluir largura, estilo e cor. <code>border: 2px solid blue;</code> </p>
+    <p>Exemplo: <code>div { border-style: solid; }</code></p>
+    <li><code>border-color:</code> Define a cor da borda (valores: nomes de cores, hexadecimais, RGB, etc.), Permite controlar a cor das quatro bordas ou controlar individualmente (border-top-color, border-right-color, border-bottom-color, border-left-color).</li>
+    <p>Exemplo: <code>div { border-color: blue; }</code></p>
+    <li><code>border-radius:</code> Define o raio da borda (valores: pixels, em, rem, etc.).</li>
+    <p>Exemplo: <code>div { border-radius: 5px; }</code></p>
+</ul>
+<p>A propriedade curta <code>border</code> pode ser usada para definir todas as propriedades de borda de uma só vez.</p>
+<p>Segue a ordem: largura | estilo | cor</p>
+<p>Exemplo: <code>div { border: 2px solid blue; }</code></p>
+
+<p>A propriedade border-style é responsável por definir o estilo da borda, como sólida, pontilhada ou tracejada.</p>
+<ul>
+    <li><code>solid:</code> Borda sólida.</li>
+    <li><code>dashed:</code> Borda tracejada.</li>
+    <li><code>dotted:</code> Borda pontilhada.</li>
+    <li><code>double:</code> Borda dupla.</li>
+    <li><code>groove:</code> Borda com efeito de entalhe.</li>
+    <li><code>ridge:</code> Borda com efeito de relevo.</li>
+    <li><code>inset:</code> Borda que parece estar embutida.</li>
+    <li><code>outset:</code> Borda que parece estar saindo.</li>
+    <li><code>none:</code> Sem borda.</li>
+    <li><code>hidden:</code> Sem borda (semelhante a none, mas usado em tabelas).</li>
+</ul>
+<p>Podemos usar a propriedade border curta para definir todas as propriedades de borda de uma só vez.</p>
+<p>Segue a ordem: largura | estilo | cor</p>
+<p>Exemplo: <code>div { border: 2px dashed red; }</code></p>
+
+</main>
 
 </body>
 </html>

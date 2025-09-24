@@ -1,0 +1,6 @@
+h2{
+    color: rgb(11, 11, 12);
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: dotted solid double dashed;
+}
