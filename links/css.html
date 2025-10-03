@@ -6,11 +6,21 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="../assets/css/css-style.css">
+
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Sofia&effect=neon|outline|emboss|shadow-multiple">
+
+    <style>
+        h1{
+            font-family:"Sofia", sans-serif;
+            font-size: 30px;
+        }
+    </style>
+
 </head>
 <body>
     <main>
 
-    <h1>CSS</h1>
+    <h1 class="font-effect-shadow-multiple">CSS</h1>
 
     <h2>Conceito Básico</h2>
     <p>CSS (Cascading Style Sheets) é uma linguagem de estilo utilizada para descrever a apresentação de documentos HTML. 
@@ -148,6 +158,93 @@
 <p>Podemos usar a propriedade border curta para definir todas as propriedades de borda de uma só vez.</p>
 <p>Segue a ordem: largura | estilo | cor</p>
 <p>Exemplo: <code>div { border: 2px dashed red; }</code></p>
+
+<h2>Margem CSS</h2>
+<p>A margem é a área externa de um elemento, que cria espaço entre ele e os elementos adjacentes. Podemos controlar a margem usando as propriedades <code>margin</code>, <code>margin-top</code>, <code>margin-right</code>, <code>margin-bottom</code> e <code>margin-left</code>.</p>
+<ul>
+    <li><code>margin:</code> Define a margem de todos os lados de um elemento.</li>
+    <li><code>margin-top:</code> Define a margem superior.</li>
+    <li><code>margin-right:</code> Define a margem direita.</li>
+    <li><code>margin-bottom:</code> Define a margem inferior.</li>
+    <li><code>margin-left:</code> Define a margem esquerda.</li>
+</ul>
+<p>Exemplo: <code>div { margin: 20px; }</code></p>
+
+<h2>Preenchimento CSS</h2>
+<p>O preenchimento (padding) é a área interna de um elemento, que cria espaço entre o conteúdo do elemento e suas bordas. Podemos controlar o preenchimento usando as propriedades <code>padding</code>, <code>padding-top</code>, <code>padding-right</code>, <code>padding-bottom</code> e <code>padding-left</code>.</p>
+<ul>
+    <li><code>padding:</code> Define o preenchimento de todos os lados de um elemento.</li>
+    <li><code>padding-top:</code> Define o preenchimento superior.</li>
+    <li><code>padding-right:</code> Define o preenchimento direito.</li>
+    <li><code>padding-bottom:</code> Define o preenchimento inferior.</li>
+    <li><code>padding-left:</code> Define o preenchimento esquerdo.</li>
+</ul>
+<p>Exemplo: <code>div { padding: 15px; }</code></p>
+
+<h2>A altura, Largura e Largura máxima do CSS</h2>
+<p>Podemos controlar a altura e a largura de um elemento usando as propriedades <code>height</code> e <code>width</code>.</p>
+<ul>
+    <li><code>height:</code> Define a altura de um elemento.</li>
+    <li><code>width:</code> Define a largura de um elemento.</li>
+    <li><code>max-height:</code> Define a altura máxima de um elemento.</li>
+    <li><code>max-width:</code> Define a largura máxima de um elemento.</li>
+</ul>
+<p>Exemplo: <code>div { height: 200px; width: 300px; }</code></p>
+
+<h2>Modelo de Caixa CSS</h2>
+<p style="border-color: aqua; border-style: solid; outline-style: dotted; outline-color: brown;">O modelo de caixa CSS descreve como os elementos HTML são exibidos na página. Cada elemento é representado como uma caixa retangular, que consiste em conteúdo, borda, preenchimento e margem.</p>
+<ul>
+    <li><code>content:</code> A área onde o conteúdo do elemento é exibido.</li>
+    <li><code>padding:</code> A área entre o conteúdo e a borda do elemento.</li>
+    <li><code>border:</code> A borda ao redor do elemento.</li>
+    <li><code>margin:</code> A área externa que cria espaço entre o elemento e os elementos adjacentes.</li>
+</ul>
+<p>A largura total de um elemento deve ser calculada assim:</p>
+<ul>
+    <li><code>largura total = largura do conteúdo + preenchimento esquerdo + preenchimento direito + borda esquerda + borda direita + margem esquerda + margem direita</code></li>
+</ul>
+<p>Exemplo: <code>div { width: 300px; padding: 10px; border: 2px solid black; margin: 20px; }</code></p>
+<br>
+<p>A altura total de um elemento deve ser calculada assim:</p>
+<ul>
+    <li><code>altura total = altura do conteúdo + preenchimento superior + preenchimento inferior + borda superior + borda inferior + margem superior + margem inferior</code></li>
+</ul>
+<p>Exemplo: <code>div { height: 200px; padding: 10px; border: 2px solid black; margin: 20px; }</code></p>
+
+<h2>Contorno do CSS</h2>
+<p>O contorno é uma linha que envolve um elemento, semelhante à borda, mas não afeta o layout da página. Podemos controlar o contorno usando as propriedades <code>outline</code>, <code>outline-width</code>, <code>outline-style</code>, <code>outline-color</code> e <code>outline-offset</code>.</p>
+<ul>
+    <li><code>outline:</code> Define o contorno de um elemento.</li>
+    <li><code>outline-width:</code> Define a largura do contorno (valores: pixels, em, rem, etc.) ou usando valores predefinidos: thin, medium, thick.</li>
+    <li><code>outline-style:</code> Define o estilo do contorno (valores: solid, dashed, dotted, etc.).</li>
+    <li><code>outline-color:</code> Define a cor do contorno (valores: nomes de cores, hexadecimais, RGB, etc.).</li>
+    <li><code>outline-offset:</code> Define a distância entre o contorno e a borda do elemento (valores: pixels, em, rem, etc.).</li>
+</ul>
+<p style="font-family: 'Times New Roman', 'Arial Narrow', Arial, sans-serif; font-variant: small-caps;">Abreviação do Contorno do CSS. Exemplo: <code>div { outline: 2px dashed red; }</code></p>
+
+<p style="font: 16px Arial, sans-serif;">Box-Sizing do CSS. <br> O Box-Sizing é uma propriedade que altera a forma como a largura e a altura de um elemento são calculadas. Por padrão, a largura e a altura de um elemento são calculadas apenas a partir da área de conteúdo. No entanto, ao definir o Box-Sizing como "border-box", a largura e a altura incluem o preenchimento e a borda, tornando mais fácil o controle do tamanho dos elementos.</p>
+<ul>
+    <li><code>box-sizing:</code> Define o modelo de caixa de um elemento.</li>
+    <li><code>content-box:</code> O valor padrão. A largura e a altura incluem apenas o conteúdo.</li>
+    <li><code>border-box:</code> A largura e a altura incluem o conteúdo, o preenchimento e a borda.</li>
+</ul>
+<p>Exemplo: <code>div { box-sizing: border-box; }</code></p>
+
+<h2 style="text-align: center;">Texto CSS</h2>
+<p style="font: italic bold 18px 'Arial', sans-serif;">O CSS oferece várias propriedades para estilizar o texto em uma página web. Algumas das propriedades mais comuns incluem:</p>
+<ul>
+    <li><code>color:</code> Define a cor do texto.</li>
+    <li><code>font-family:</code> Define a família da fonte (tipografia) do texto.</li>
+    <li><code>font-size:</code> Define o tamanho da fonte do texto.</li>
+    <li><code>font-weight:</code> Define a espessura da fonte (valores: normal, bold, bolder, lighter ou números de 100 a 900).</li>
+    <li><code>font-style:</code> Define o estilo da fonte (valores: normal, italic, oblique).</li>
+    <li><code>text-align:</code> Define o alinhamento do texto (valores: left, right, center, justify).</li>
+    <li><code>text-decoration:</code> Adiciona decorações ao texto (valores: none, underline, overline, line-through).</li>
+    <li><code>text-transform:</code> Controla a capitalização do texto (valores: none, capitalize, uppercase, lowercase).</li>
+    <li><code>line-height:</code> Define a altura da linha do texto.</li>
+    <li><code>letter-spacing:</code> Define o espaçamento entre as letras do texto.</li>
+    <li><code>word-spacing:</code> Define o espaçamento entre as palavras do texto.</li>
+    <li><code>text-shadow:</code> Adiciona sombra ao texto.</li>
 
 </main>
 
